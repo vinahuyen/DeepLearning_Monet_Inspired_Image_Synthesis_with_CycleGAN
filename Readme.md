@@ -3,7 +3,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 This project applies **CycleGAN**, a type of Generative Adversarial Network designed for *unpaired* image-to-image translation, to transform everyday photographs into images resembling the style of **Claude Monet**.
 
 The model learns Monet’s brushwork, color palette, and textures, enabling it to generate realistic impressionist-style artwork from standard photos.
@@ -12,7 +12,7 @@ This work is developed as part of the Kaggle competition: **"I'm Something of a 
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Translate real photos into Monet-style paintings.  
 - Train CycleGAN on **unpaired datasets** (Monet paintings & real photos).  
 - Apply data augmentation to improve model generalization.  
@@ -21,7 +21,7 @@ This work is developed as part of the Kaggle competition: **"I'm Something of a 
 
 ---
 
-## 🧠 Methodology
+##  Methodology
 
 ### 1. Dataset
 The dataset contains:
@@ -51,7 +51,7 @@ These ensure content preservation while producing Monet-like textures.
 
 ---
 
-## 🛠 Environment Setup
+##  Environment Setup
 This project uses:
 - Python 3.11  
 - PyTorch  
@@ -62,7 +62,7 @@ This project uses:
 
 ---
 
-## 🚀 Training
+##  Training
 
 ### Key training features:
 - Image size resized to **256×256**
@@ -75,7 +75,7 @@ Training runs for **multiple epochs**, steadily improving the Monet-style output
 
 ---
 
-## 🖼 Results
+##  Results
 
 The model outputs:
 - Monet-style translations for each input photo  
@@ -88,5 +88,35 @@ Final submissions are saved as JPEG files in the required `images/` format for K
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
+data/
+
+│── monet_jpg/
+
+│── photo_jpg/
+
+models/
+
+│── generator.py
+
+│── discriminator.py
+
+│── cyclegan.py
+
+outputs/
+
+│── generated_monet/
+
+README.md
+
+notebook.ipynb
+
+
+##  References
+
+Zhu et al., Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks, 2017.
+
+Kaggle: I'm Something of a Painter Myself Competition.
+
+PyTorch GAN Tutorials.
